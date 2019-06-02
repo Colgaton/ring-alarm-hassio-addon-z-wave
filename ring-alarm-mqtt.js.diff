@@ -1,0 +1,15 @@
+--- ring-alarm-mqtt.js	2019-06-01 21:21:36.854299200 -0700
++++ ring-alarm-mqtt.js.new	2019-06-01 21:21:25.173874800 -0700
+@@ -101,6 +101,12 @@
+                 command: true
+             }
+             break;
++       case 'adapter.zwave':
++             return {
++                className: 'door',
++                component: 'binary_sensor'
++             }
++             break;
+     }
+ 
+     // Check if device is a lock	
