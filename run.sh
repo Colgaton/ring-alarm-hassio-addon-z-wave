@@ -6,8 +6,6 @@ npm -v
 git --version
 
 cp /data/options.json ring-alarm-mqtt/config.json
-cp /data/ring-alarm-mqtt.js.diff ring-alarm-mqtt/ring-alarm-mqtt.js.diff
-cp ring-alarm-mqtt.js.diff ring-alarm-mqtt/ring-alarm-mqtt.js.diff
 
 cd ring-alarm-mqtt
 npm install
