@@ -6,8 +6,11 @@ npm -v
 git --version
 
 cp /data/options.json ring-alarm-mqtt/config.json
+cp /data/ring-alarm-mqtt.js.diff ring-alarm-mqtt/ring-alarm-mqtt.js.diff
+cp ring-alarm-mqtt.js.diff ring-alarm-mqtt/ring-alarm-mqtt.js.diff
 
 cd ring-alarm-mqtt
 npm install
 chmod +x ring-alarm-mqtt.js
+patch -p0 < ring-alarm-mqtt.js.diff
 DEBUG=ring-alarm-mqtt /ring-alarm-mqtt/ring-alarm-mqtt.js
